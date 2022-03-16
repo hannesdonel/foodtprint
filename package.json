@@ -1,9 +1,10 @@
 {
   "scripts": {
     "dev": "mkdir dist || rm -r dist && parcel index.html",
-    "build": "mkdir dist || rm -r dist && parcel build index.html --public-url ./",
+    "build": "mkdir dist || rm -r dist && parcel build index.html --public-url ./"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
     "parcel": "^2.3.2"
   }
 }
