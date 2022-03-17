@@ -25,7 +25,14 @@ body {
   color: var(--font-color);
   letter-spacing: 1.1px;
   margin: 0;
-  min-width: 200px
+  min-width: 200px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../assets/foodtprint_background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 // Main Page
@@ -38,9 +45,6 @@ body {
   justify-content: center;
   align-content: center;
   padding: var(--global-padding);
-  background-image: url(../assets/foodtprint_background.png);
-  background-size: cover;
-  background-position: center;
   overflow: scroll;
 }
 
