@@ -26,8 +26,11 @@ body {
   letter-spacing: 1.1px;
   margin: 0;
   min-width: 200px;
+}
+
+#background {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../assets/foodtprint_background.png);
   background-position: center center;
   background-repeat: no-repeat;
