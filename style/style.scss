@@ -1,0 +1,141 @@
+@import "../assets/font/MyFontsWebfontsKit.css";
+
+// Global Variables
+
+:root {
+  --font-color: #FFFFFF;
+  --font-color-inverse: #000000;
+  --font-size-standard: 18px;
+  --font-size-small: 0.75em;
+  --button-color: #414141;
+  --button-color-hover: #DA226D;
+  --border-radius: 10px;
+  --global-padding: min(2%, 20px);
+}
+
+// Global
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: LunchBox;
+  font-size: var(--font-size-standard);
+  color: var(--font-color);
+  letter-spacing: 1.1px;
+  margin: 0;
+  min-width: 200px
+}
+
+// Main Page
+
+#app-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: var(--global-padding);
+  background-image: url(../assets/foodtprint_background.png);
+  background-size: cover;
+  background-position: center;
+  overflow: scroll;
+}
+
+#logo-container {
+  width: 100%;
+  text-align: center;
+
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+#contact-container {
+  margin: 2vh 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  #contact {
+    width: 80%;
+    text-align: center;
+    font-size: 0.9em;
+  }
+}
+
+#button-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  #button-container {
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 32px 24px;
+    border-radius: var(--border-radius);
+
+    a {
+      margin: 1vh 0;
+      padding: 12px 16px;
+      background-color: var(--button-color);
+      border: none;
+      border-radius: var(--border-radius);
+      transition: 0.25s;
+      text-align: center;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+
+      &:first-child {
+        margin: 0 0 1vh 0;
+      }
+
+      &:last-child {
+        margin: 1vh 0 0 0;
+      }
+
+      &:hover {
+        background-color: var(--button-color-hover);
+        cursor: pointer;
+        transform: scale(1.025);
+      }
+    }
+  }
+}
+
+.invisible-link {
+  text-decoration: none;
+  color: var(--font-color);
+  display: inline-block;
+
+  &:visited {
+    color: var(--font-color);
+  }
+}
+
+// Imprint
+
+// Datenschutz
+
+// Footer
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-small);
+  padding: 32px 0;
+
+  .divider {
+    padding: 0 5px;
+  }
+}
